@@ -23,6 +23,7 @@ const server = new SMTPServer({
                 err.responseCode = 552;
                 return callback(err);
             }
+            console.log("received email");
             callback(null, 'Message queued as abcdef');
         });
     }
