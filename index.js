@@ -29,7 +29,7 @@ const server = new SMTPServer({
     }
 });
 
-server.listen(25);
+server.listen(6000);
 
 
 var app = express()
