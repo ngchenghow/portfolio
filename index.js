@@ -4,8 +4,7 @@ var smtp_express = express()
 smtp_express.get('/', function (req, res) {
     res.send('SMTP Resp')
 })
-smtp.listen(6000)
-
+smtp_express.listen(6000)
 
 var app = express()
 var admin=express()
