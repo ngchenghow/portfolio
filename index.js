@@ -5,6 +5,7 @@ const SMTPServer = require('smtp-server').SMTPServer;
 const server = new SMTPServer({
     size: 1024, // allow messages up to 1 kb
     onRcptTo(address, session, callback) {
+        console.log("onRcpt");
         // do not accept messages larger than 100 bytes to specific recipients
         let expectedSize = Number(session.envelope.mailFrom.args.SIZE) || 0;
         if (address.address === 'almost-full@example.com' &&  expectedSize > 100) {
@@ -15,6 +16,7 @@ const server = new SMTPServer({
         callback();
     },
     onData(stream, session, callback){
+        console.log("onData");
         stream.pipe(process.stdout); // print message to console
         stream.on('end', () => {
             let err;
