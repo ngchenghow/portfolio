@@ -1,9 +1,0 @@
-{
-    "require": {
-      "php": "5.6.*|7.0.*|7.1.*|7.2.*",
-      "silex/silex": "^2.3"
-    },
-    "require": {
-      "tmarois/filebase":"^1.0"
-    }
-  }
