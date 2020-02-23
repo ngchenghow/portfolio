@@ -10,6 +10,7 @@ $dbhost = "34.68.98.47";
     die("Connection failed: " . $conn->connect_error);
 }
 
+/*
 $sql = "CREATE TABLE Website (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
@@ -25,6 +26,7 @@ $sql = "CREATE TABLE Website (
     
     $conn->close();
 
+*/
 
 
 
