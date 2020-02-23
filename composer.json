@@ -4,6 +4,6 @@
       "silex/silex": "^2.3"
     },
     "require": {
-      " tmarois/filebase":"^1.0"
+      "tmarois/filebase":"^1.0"
     }
   }
