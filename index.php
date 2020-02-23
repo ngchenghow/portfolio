@@ -1,6 +1,6 @@
 <?php
 
-namespace Filebase;
+require_once("Database.php");
 
 // setting the access and configration to your database
 
