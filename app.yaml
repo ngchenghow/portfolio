@@ -1,0 +1,3 @@
+runtime: php72
+# the default is to serve your app using `public/index.php` or `index.php`
+entrypoint: serve path/to/my/front/controller.php
