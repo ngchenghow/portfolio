@@ -1,10 +1,9 @@
 <?php
 
-$dbhost = "127.0.0.1";
  $dbuser = "root";
  $dbpass = "534521";
  $db = "root";
- $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
+ $conn = new mysqli('127.0.0.1', $dbUser, $dbPass, $db, 3306);
 
  if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
