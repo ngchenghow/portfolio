@@ -1,5 +1,6 @@
 <?php
 
+namespace Filebase;
 
 // setting the access and configration to your database
 
